@@ -1,15 +1,12 @@
 FROM node
-MAINTAINER [Alejandro Baez](https://twitter.com/a_baez)
 
-RUN git clone -b custom https://github.com/abaez/haste-server.git /opt/haste
+RUN git clone https://github.com/seejohnrun/haste-server.git /opt/haste
 
-ADD add/config.js /opt/haste/
-#ADD add/index.html /opt/haste/static/
-ADD add/highlight.min.js /opt/haste/static/
+ADD config.js /opt/haste/
 WORKDIR /opt/haste
 
 RUN npm install
 
-expose 7777
+expose 7070
 
 cmd ["npm", "start"]

@@ -1,7 +1,7 @@
 {
 
   "host": "0.0.0.0",
-  "port": 7777,
+  "port": 80,
 
   "keyLength": 10,
 
@@ -13,19 +13,29 @@
 
   "logging": [
     {
-      "level": "verbose",
+      "level": "error",
       "type": "Console",
       "colorize": true
     }
   ],
 
   "keyGenerator": {
-    "type": "phonetic"
+    "type": "random"
+  },
+
+  "rateLimits": {
+    "categories": {
+      "normal": {
+        "totalRequests": 500,
+        "every": 60000
+      }
+    }
   },
 
   "storage": {
     "type": "file",
-    "path": "./data"
+    "path": "./data",
+    "expire1": 2592000
   },
 
   "documents": {
