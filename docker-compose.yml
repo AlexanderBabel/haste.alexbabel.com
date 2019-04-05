@@ -5,10 +5,5 @@ services:
     build: .
     volumes:
       - ./data/:/opt/haste/data
-    networks:
-      - nginx_net
     ports:
-      - 7070:80
-networks:
-  nginx_net:
-    external: true
+      - 172.17.0.1:7070:80
