@@ -3,6 +3,7 @@ services:
   haste:
     container_name: haste
     build: .
+    restart: always
     volumes:
       - ./data/:/opt/haste/data
     ports:
