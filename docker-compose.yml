@@ -6,5 +6,7 @@ services:
     restart: always
     volumes:
       - ./data/:/opt/haste/data
+    env_file:
+      - .env
     ports:
-      - 172.17.0.1:7070:80
+      - ${HOST}:${PORT}:${PORT}
