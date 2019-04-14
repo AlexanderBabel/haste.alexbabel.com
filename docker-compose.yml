@@ -8,8 +8,7 @@ services:
       - ./data/:/opt/haste/data
     environment:
       - HOST=0.0.0.0
-      - VIRTUAL_HOST=haste.alexdev.de,haste.theshape.eu
-      - CERT_NAME=default
+      - VIRTUAL_HOST=haste.alexdev.de
     networks:
       - nginx
 networks:
