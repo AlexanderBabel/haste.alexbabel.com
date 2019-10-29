@@ -1,0 +1,1 @@
+-v /var/lib/dokku/data/storage/haste.alexdev.de:/opt/haste/data

@@ -7,4 +7,6 @@ WORKDIR /opt/haste
 
 RUN npm install
 
+EXPOSE 80
+
 cmd ["npm", "start"]
