@@ -6,7 +6,11 @@ services:
     restart: always
     volumes:
       - ./data/:/opt/haste/data
-    env_file:
-      - .env
-    ports:
-      - ${HOST}:${PORT}:${PORT}
+    environment:
+      - HOST=0.0.0.0
+      - VIRTUAL_HOST=haste.alexdev.de
+    networks:
+      - nginx
+networks:
+  nginx:
+    external: true
