@@ -1,3 +1,13 @@
+# [1.0.0-d.2](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0-d.1...v1.0.0-d.2) (2020-07-26)
+
+
+### Bug Fixes
+
+* **conf:** switch to postgres ([5a51b9d](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/5a51b9d0a3dd22bddcd0ac53b3ba01fe3229be0b))
+* **Dockerfile:** add pg ([dbfab62](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/dbfab62a72d0d556ce91397da8dfa16ee7352a3a))
+* **Dockerfile:** update node version ([a03d28e](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/a03d28e99ac1691dca13fdf1774200764b2c3e50))
+* **haste:** update Dockerfile ([a2e2f28](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/a2e2f28ad3fd824d55b1c7333db9228cd9966b47))
+
 # 1.0.0-d.1 (2020-07-26)
 
 
