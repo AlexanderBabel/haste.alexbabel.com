@@ -6,7 +6,7 @@ RUN apk --update add --no-cache git && \
     apk del git
 WORKDIR /opt/haste
 
-RUN npm install && \
+RUN yarn && yarn add pg && \
     rm -rf /opt/haste/config.js && \
     ln -s /opt/haste/config.json /opt/haste/config.js
 ADD conf/config.json /opt/haste/config.json
@@ -14,4 +14,4 @@ ADD conf/config.json /opt/haste/config.json
 VOLUME ["/opt/haste/data"]
 
 EXPOSE 80
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
