@@ -1,8 +1,0 @@
-image: appropriate/curl
-
-pipelines:
-  branches:
-    master:
-      - step:
-          script:
-            - curl "https://update-${UPDATE_SERVER}.alexdev.de/update/${BITBUCKET_REPO_SLUG}?auth=$(eval "echo \"\$BB_${UPDATE_SERVER}_UPDATE_AUTH\"")"
