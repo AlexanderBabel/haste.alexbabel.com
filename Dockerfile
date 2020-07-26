@@ -1,4 +1,4 @@
-FROM node:alpine-14
+FROM node:14-alpine
 
 RUN apk --update add --no-cache git && \
     git clone https://github.com/seejohnrun/haste-server.git /opt/haste && \
