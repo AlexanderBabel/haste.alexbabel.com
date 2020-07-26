@@ -6,7 +6,7 @@ RUN apk --update add --no-cache git && \
     apk del git
 WORKDIR /opt/haste
 
-RUN yarn && \
+RUN npm ci && \
     rm -rf /opt/haste/config.js && \
     ln -s /opt/haste/config.json /opt/haste/config.js
 ADD conf/config.json /opt/haste/config.json
