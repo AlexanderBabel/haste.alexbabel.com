@@ -1,3 +1,10 @@
+# [1.0.0-d.5](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0-d.4...v1.0.0-d.5) (2020-07-27)
+
+
+### Bug Fixes
+
+* push expire to one year ([a637895](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/a637895ca7dad952c3ad1bffad8a870db7fb0811))
+
 # [1.0.0-d.4](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0-d.3...v1.0.0-d.4) (2020-07-27)
 
 
