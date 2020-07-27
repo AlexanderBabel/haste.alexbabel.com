@@ -1,3 +1,10 @@
+# [1.0.0-d.4](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0-d.3...v1.0.0-d.4) (2020-07-27)
+
+
+### Bug Fixes
+
+* add expire (30 days) ([b68457a](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/b68457a943e8399fbda2749d549e331eb685db70))
+
 # [1.0.0-d.3](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0-d.2...v1.0.0-d.3) (2020-07-27)
 
 
