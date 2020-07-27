@@ -1,3 +1,10 @@
+# [1.0.0-d.3](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0-d.2...v1.0.0-d.3) (2020-07-27)
+
+
+### Features
+
+* switch to modified haste server ([90e8cb0](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/90e8cb03915f9505dc3b248d7fcaadfa741d83be))
+
 # [1.0.0-d.2](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0-d.1...v1.0.0-d.2) (2020-07-26)
 
 
