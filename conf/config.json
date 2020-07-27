@@ -34,7 +34,7 @@
 
   "storage": {
     "type": "postgres",
-    "expire": 2592000
+    "expire": 31536000
   },
 
   "documents": {
