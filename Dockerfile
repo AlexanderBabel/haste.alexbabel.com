@@ -1,14 +1,15 @@
-FROM node
+FROM node:8-alpine
 
-RUN git clone https://github.com/seejohnrun/haste-server.git /opt/haste
-
-ADD config.js /opt/haste/
+RUN apk --update add --no-cache git && \
+    git clone https://github.com/AlexanderBabel/haste-server.git /opt/haste && \
+    rm -rf /opt/haste/.git/ && \
+    apk del git
 WORKDIR /opt/haste
 
-RUN npm install
-
-ENV PORT 80
+RUN npm ci && \
+    rm -rf /opt/haste/config.js && \
+    ln -s /opt/haste/config.json /opt/haste/config.js
+ADD conf/config.json /opt/haste/config.json
 
 EXPOSE 80
-
-cmd ["npm", "start"]
+CMD ["node", "server.js"]
