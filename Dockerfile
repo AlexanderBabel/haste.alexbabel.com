@@ -1,7 +1,7 @@
 FROM node:8-alpine
 
 RUN apk --update add --no-cache git && \
-    git clone https://github.com/seejohnrun/haste-server.git /opt/haste && \
+    git clone https://github.com/AlexanderBabel/haste-server.git /opt/haste && \
     rm -rf /opt/haste/.git/ && \
     apk del git
 WORKDIR /opt/haste
