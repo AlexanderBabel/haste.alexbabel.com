@@ -13,3 +13,5 @@ ADD conf/config.json /opt/haste/config.json
 
 EXPOSE 80
 CMD ["node", "server.js"]
+
+LABEL org.opencontainers.image.source="https://github.com/alexanderbabel/haste.alexbabel.com/"
