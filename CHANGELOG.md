@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0...v1.1.0) (2020-08-06)
+
+
+### Features
+
+* **ci:** update release workflow ([438f8be](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/438f8beae9541ad9ce084a8b952c41f27234d1fd))
+
 # 1.0.0 (2020-07-27)
 
 
