@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.1.0...v1.2.0) (2021-08-25)
+
+
+### Features
+
+* add support for PORT env variable ([607c194](https://github.com/AlexanderBabel/haste.alexbabel.com/commit/607c1948f6d1dbb970e600fd60f8cba45169da6a))
+
 # [1.1.0](https://github.com/AlexanderBabel/haste.alexbabel.com/compare/v1.0.0...v1.1.0) (2020-08-06)
 
 
