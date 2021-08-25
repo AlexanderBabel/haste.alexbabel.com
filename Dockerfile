@@ -9,9 +9,11 @@ WORKDIR /opt/haste
 RUN npm ci && \
     rm -rf /opt/haste/config.js && \
     ln -s /opt/haste/config.json /opt/haste/config.js
-ADD conf/config.json /opt/haste/config.json
+ADD conf/config.json /opt/haste/config.template
 
-EXPOSE 80
-CMD ["node", "server.js"]
+ENV PORT 8080
+EXPOSE 8080
+
+CMD sh -c "envsubst \"`env | awk -F = '{printf \" \\\\$%s\", $1}'`\" < /opt/haste/config.template > /opt/haste/config.json && node server.js"
 
 LABEL org.opencontainers.image.source="https://github.com/alexanderbabel/haste.alexbabel.com/"
